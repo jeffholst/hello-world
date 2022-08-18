@@ -5,12 +5,12 @@ export default class {
   }
 
   log() {
-    console.log('Hello galaxy!')
+    console.log('Hello Super Mario Galaxy!')
   }
   
   write() {
     debugger
-    document.body.append('Hello galaxy!')
+    document.body.append('Hello Super Mario Galaxy!')
   }
 
 }
