@@ -1,11 +1,16 @@
 export default class {
 
-  static log() {
-    console.log('Hello world!')
+  constructor() {
+
+  }
+
+  log() {
+    console.log('Hello universe!')
   }
   
-  static write() {
-    document.body.append('Hello World!')
+  write() {
+    debugger
+    document.body.append('Hello universe!')
   }
 
 }

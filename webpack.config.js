@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'hello-world.js',
@@ -8,18 +9,8 @@ module.exports = {
     libraryTarget: 'var',
     library: 'HelloWorld'
   },
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
-  }
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
 };
