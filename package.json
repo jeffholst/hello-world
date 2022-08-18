@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npm webpack serve --open",
     "dev": "npx webpack --watch --mode development --config webpack.config.js",
     "build": "npx webpack --mode production --config webpack.config.js"
   },
